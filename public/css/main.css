@@ -1,0 +1,74 @@
+html, body {
+   font-family: 'Roboto', sans-serif;
+   width: 100%;
+   height: 100%;
+}
+
+.header {
+   padding: 0px;
+   margin: 0px;
+}
+
+.footer {
+   position: relative;
+   clear:both;
+   padding-top: 20px;
+}
+
+.footer-brand {
+   margin-bottom: 0px;
+}
+
+.jumbotron {
+   padding-top: 1rem !important;
+   padding-left: 3rem;
+   padding-right: 3rem;
+   padding-bottom: 0px;
+   margin-bottom: 0px !important;
+}
+
+.navbar-default {
+   margin-bottom: 0px !important;
+}
+
+.navbar-fixed-bottom {
+   background-color: #fff !important;
+}
+
+.day-title {
+   cursor: pointer;
+}
+
+.concept {
+   padding-left: 1rem;
+}
+
+
+
+/** Social Media **/
+
+.social {
+   text-decoration: none !important;
+}
+
+svg {
+   display: inline-block;
+   height: 4.5rem;
+   max-height: 80px;
+   width: auto;
+   stroke: #000;
+   stroke-width: 15;
+   fill: none;
+}
+
+#tw {stroke-dasharray:  300 , 0, 3000;}
+#fa {stroke-dasharray:    0 , 0, 2900;}
+
+svg:hover #tw {
+   animation: tw 1s;
+   und
+}
+svg:hover #fa { animation: fa 1s; }
+
+@keyframes tw { 10% {stroke-dasharray:  300, 500, 3000} 100% { stroke-dasharray:3300, 500, 3000;} }
+@keyframes fa { 10% {stroke-dasharray:    0, 500, 2900} 100% { stroke-dasharray:2900, 500, 2900;} }
