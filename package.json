@@ -1,20 +1,24 @@
 {
   "name": "web-app",
   "version": "1.0.0",
-  "description": "My app.",
+  "description": "Web application for go_code.",
+  "engines": {
+    "node": "6.1.0"
+  },
+  "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
-    "body-parser": "^1.15.1",
-    "compression": "^1.6.2",
-    "dotenv": "^2.0.0",
-    "express": "^4.13.4",
-    "express-validator": "^2.20.4",
-    "mongoose": "^4.10.8"
+    "express": "^4.13.4"
   },
-  "devDependencies": {},
-  "engines": {
-    "node": "6.1.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlowerison/go-code-web-app"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ]
 }
