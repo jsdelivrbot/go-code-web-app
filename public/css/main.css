@@ -43,6 +43,11 @@ html, body {
    padding-left: 1rem;
 }
 
+#home-banner {
+   background-image: url("img/home_banner.jpg");
+   background-size: cover;
+}
+
 
 /** Social Media **/
 
