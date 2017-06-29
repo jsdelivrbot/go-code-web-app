@@ -1,17 +1,25 @@
-<div class="jumbotron" ng-controller="SyllabusCtrl">
-	<div class="page-header">
-		<h2>Syllabus <small>Day to Day Lesson Plans</small></h2>
+<div id="syllabus-container" class="container">
+	<div class="row">
+		<div id="syllabus-col" class="col col-sm-6" ng-controller="SyllabusCtrl">
+			<div class="page-header">
+				<h2>Syllabus <small>Day to Day Lesson Plans</small></h2>
+			</div>
+			<ul class="list-group">
+				<li class="list-group-item" ng-repeat="day in days">
+					<div data-toggle="collapse" class="active" data-target="#day-{{day.id}}-concepts">
+						<div class="day-title"><big>{{day.title}}</big></div>
+					</div>
+					<div id="day-{{day.id}}-concepts" class="collapse">
+							<ul class="nav nav-list">
+								<li class="concept" ng-repeat="concept in day.concepts">{{concept}}</li>
+							</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="col col-sm-6">
+			<div id="syllabus-banner"></div>
+		</div>
 	</div>
-	<ul class="list-group">
-		<li class="list-group-item" ng-repeat="day in days">
-			<div data-toggle="collapse" class="active" data-target="#day-{{day.id}}-concepts">
-				<div class="day-title"><big>{{day.title}}</big></div>
-			</div>
-			<div id="day-{{day.id}}-concepts" class="collapse">
-					<ul class="nav nav-list">
-						<li class="concept" ng-repeat="concept in day.concepts">{{concept}}</li>
-					</ul>
-			</div>
-		</li>
-	</ul>
 </div>
+

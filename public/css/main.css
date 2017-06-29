@@ -4,6 +4,20 @@ html, body {
    height: 100%;
 }
 
+#main {
+   width: 100%;
+}
+
+#syllabus-container {
+   margin-left: 5%;
+   margin-right: 0px;
+}
+
+#syllabus-col {
+   height: 55rem;
+   overflow-y: scroll;
+}
+
 .header {
    padding: 0px;
    margin: 0px;
@@ -27,6 +41,10 @@ html, body {
    margin-bottom: 0px !important;
 }
 
+#contact-jumbotron {
+   padding-bottom: 10px !important;
+}
+
 .navbar-default {
    margin-bottom: 0px !important;
 }
@@ -43,8 +61,35 @@ html, body {
    padding-left: 1rem;
 }
 
+#about-head-img {
+   padding-top: 60px;
+}
+
 #home-banner {
-   background-image: url("img/home_banner.jpg");
+   padding-bottom: 22.5rem;
+   width: 100%;
+   background-image: url('../img/home_banner.jpg');
+   background-size: cover;
+}
+
+#about-banner {
+   padding-bottom: 22.5rem;
+   width: 100%;
+   background-image: url('../img/about_banner.jpg');
+   background-size: cover;
+}
+
+#syllabus-banner {
+   padding-bottom: 55.2rem;
+   width: 100%;
+   background-image: url('../img/syllabus_banner.jpg');
+   background-size: cover;
+}
+
+#contact-banner {
+   padding-bottom: 24.8rem;
+   width: 100%;
+   background-image: url('../img/contact_banner.jpg');
    background-size: cover;
 }
 

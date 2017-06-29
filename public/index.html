@@ -21,14 +21,19 @@
 
 		<!-- Local Controllers -->
 		<script src="js/app.js"></script>
-		<script src="js/controllers/about.js"></script>
 		<script src="js/controllers/syllabus.js"></script>
-		<script src="js/controllers/contact.js"></script>
-		<script src="js/controllers/list.js"></script>
 	</head>
 	<body ng-app="MyApp">
-		<div ng-include="'partials/header.html'"></div>
-		<div id="main" ng-view></div>
-		<div ng-include="'partials/footer.html'"></div>
+		<div id="main" class="container">
+			<div class="row">
+				<div ng-include="'partials/header.html'"></div>
+			</div>
+			<div class="row">
+				<div ng-view></div>
+			</div>
+			<div class="row">
+				<div ng-include="'partials/footer.html'"></div>
+			</div>
+		</div>
 	</body>
 </html>
