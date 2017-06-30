@@ -2,14 +2,23 @@
   "name": "web-app",
   "version": "1.0.0",
   "description": "My app.",
+  "engines": {
+    "node": "6.1.0"
+  },
+  "main": "server.js",
   "scripts": {
-    "start": "node index.html"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.13.4"
   },
-  "devDependencies": {},
-  "engines": {
-    "node": "6.1.0"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tlowerison/go-code-web-app"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
 }
