@@ -58,4 +58,18 @@ app.controller('SyllabusCtrl', function($scope) {
 			]
 		}
 	];
+
+	$scope.bannerResize = function() {
+		if ($(window).width() < 992 && !$scope.small) {
+			$('#syllabus-banner').css('padding', '20vh');
+			$scope.small = true;
+		} else if($(window).width() > 992 && $scope.small) {
+			$('#syllabus-banner').css('padding', '40vh');
+			$scope.small = false;
+		}
+	};
+	$scope.small = $(window).width() >= 992;
+	$scope.bannerResize();
+
+	$(window).on('resize', $scope.bannerResize);
 });
