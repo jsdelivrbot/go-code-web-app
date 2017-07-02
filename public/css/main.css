@@ -1,100 +1,64 @@
+/* ---- Elements ---- */
 html, body {
    font-family: 'Roboto', sans-serif;
    width: 100%;
    height: 100%;
 }
 
-#main {
-   width: 100%;
-}
+/* ---- Classes ---- */
 
-#syllabus-container {
-   margin-left: 5%;
-   margin-right: 0px;
-}
-
-#syllabus-col {
-   height: 55rem;
-   overflow-y: scroll;
-}
-
-.header {
-   padding: 0px;
-   margin: 0px;
-}
-
-.footer {
-   position: relative;
-   clear:both;
-   padding-top: 20px;
-}
-
-.footer-brand {
+.navbar {
    margin-bottom: 0px;
 }
 
 .jumbotron {
-   padding-top: 1rem !important;
-   padding-left: 3rem;
-   padding-right: 3rem;
-   padding-bottom: 0px;
-   margin-bottom: 0px !important;
+   height: 80vh;
 }
 
-#contact-jumbotron {
-   padding-bottom: 10px !important;
+/* ---- Carousel ---- */
+
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .carousel-control {
+        z-index: 2;
+    }
 }
 
-.navbar-default {
-   margin-bottom: 0px !important;
+.carousel {
+   height: 80vh;
 }
 
-.navbar-fixed-bottom {
-   background-color: #fff !important;
+.carousel-inner, 
+.carousel-inner .item {
+    height: 100%;
 }
 
-.day-title {
-   cursor: pointer;
-}
-
-.concept {
-   padding-left: 1rem;
-}
-
-#about-head-img {
-   padding-top: 60px;
-}
-
-#home-banner {
-   padding-bottom: 22.5rem;
-   width: 100%;
-   background-image: url('../img/home_banner.jpg');
-   background-size: cover;
-}
-
-#about-banner {
-   padding-bottom: 22.5rem;
-   width: 100%;
-   background-image: url('../img/about_banner.jpg');
-   background-size: cover;
-}
-
-#syllabus-banner {
-   padding-bottom: 55.2rem;
-   width: 100%;
-   background-image: url('../img/syllabus_banner.jpg');
-   background-size: cover;
-}
-
-#contact-banner {
-   padding-bottom: 24.8rem;
-   width: 100%;
-   background-image: url('../img/contact_banner.jpg');
-   background-size: cover;
-}
-
-
-/** Social Media **/
+/* ---- Social Media ---- */
 
 .social {
    text-decoration: none !important;
