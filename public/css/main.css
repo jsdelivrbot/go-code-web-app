@@ -1,64 +1,87 @@
-/* ---- Elements ---- */
 html, body {
    font-family: 'Roboto', sans-serif;
    width: 100%;
    height: 100%;
 }
 
-/* ---- Classes ---- */
+#main {
+   width: 100%;
+}
 
-.navbar {
+.header {
+   padding: 0px;
+   margin: 0px;
+}
+
+.footer {
+   position: relative;
+   clear:both;
+   padding-top: 20px;
+}
+
+.footer-brand {
    margin-bottom: 0px;
 }
 
 .jumbotron {
-   height: 80vh;
+   padding-top: 1rem !important;
+   padding-left: 3rem;
+   padding-right: 3rem;
+   padding-bottom: 0px;
+   margin-bottom: 0px !important;
 }
 
-/* ---- Carousel ---- */
-
-.carousel-fade {
-    .carousel-inner {
-        .item {
-            transition-property: opacity;
-        }
-        
-        .item,
-        .active.left,
-        .active.right {
-            opacity: 0;
-        }
-
-        .active,
-        .next.left,
-        .prev.right {
-            opacity: 1;
-        }
-
-        .next,
-        .prev,
-        .active.left,
-        .active.right {
-            left: 0;
-            transform: translate3d(0, 0, 0);
-        }
-    }
-
-    .carousel-control {
-        z-index: 2;
-    }
+#contact-jumbotron {
+   padding-bottom: 10px !important;
 }
 
-.carousel {
-   height: 80vh;
+.navbar-default {
+   margin-bottom: 0px !important;
 }
 
-.carousel-inner, 
-.carousel-inner .item {
-    height: 100%;
+.navbar-fixed-bottom {
+   background-color: #fff !important;
 }
 
-/* ---- Social Media ---- */
+.day-title {
+   cursor: pointer;
+}
+
+.concept {
+   padding-left: 1rem;
+}
+
+#view-row {
+   height: 50vh;
+}
+
+#syllabus-container {
+   margin-left: 5%;
+   margin-right: 0px;
+}
+
+#syllabus-col {
+   height: 55rem;
+   overflow-y: scroll;
+}
+
+#about-head-img {
+   padding-top: 60px;
+}
+
+.banner {
+   padding: 20vh;
+   width: 100%;
+   background-size: cover;
+}
+
+#home-banner { background-image: url('../img/home_banner.jpg'); }
+#syllabus-banner { background-image: url('../img/syllabus_banner.jpg'); }
+#about-banner { background-image: url('../img/about_banner.jpg'); }
+#contact-banner { background-image: url('../img/contact_banner.jpg'); }
+
+
+/** Social Media **/
 
 .social {
    text-decoration: none !important;

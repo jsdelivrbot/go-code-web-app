@@ -4,10 +4,11 @@
 		<meta charset="utf-8">
 		<base href="/">
 
-		<title>Garden Street Inn</title>
+		<title>go_code</title>
 
 		<link href='https://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
 		<link href="css/main.css" rel="stylesheet" />
+		<link rel="shortcut icon" href="img/title_icon.png" />
 
 		<!-- Bootstrap CDN -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -18,20 +19,19 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
 
-		<!-- Local Router and Controllers -->
+		<!-- Local Controllers -->
 		<script src="js/app.js"></script>
-		<script src="js/controllers/home.js"></script>
-		<script src="js/controllers/footer.js"></script>
+		<script src="js/controllers/syllabus.js"></script>
 	</head>
 	<body ng-app="MyApp">
 		<div id="main" class="container">
-			<div class="row">
+			<div id="header-row" class="row">
 				<div ng-include="'partials/header.html'"></div>
 			</div>
-			<div class="row">
+			<div id="view-row" class="row">
 				<div ng-view></div>
 			</div>
-			<div class="row">
+			<div id="footer-row" class="row">
 				<div ng-include="'partials/footer.html'"></div>
 			</div>
 		</div>

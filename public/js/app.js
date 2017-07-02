@@ -7,17 +7,13 @@ var app = angular.module('MyApp', ['ngRoute'])
 	.when('/', {
 		templateUrl: "partials/home.html"
 	})
-	.when('/rooms', {
-		templateUrl: "partials/rooms.html",
-		controller: "RoomsCtrl"
+	.when('/syllabus', {
+		templateUrl: "partials/syllabus.html",
+		controller: "SyllabusCtrl"
 	})
-	.when('/directions', {
-		templateUrl: "partials/directions.html",
-		controller: "DirecitonsCtrl"
-	})
-	.when('/about-us', {
-		templateUrl: "partials/about-us.html",
-		controller: "AboutUsCtrl"
+	.when('/about', {
+		templateUrl: "partials/about.html",
+		controller: "AboutCtrl"
 	})
 	.when('/contact', {
 		templateUrl: "partials/contact.html",
